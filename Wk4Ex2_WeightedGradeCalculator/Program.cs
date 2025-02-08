@@ -19,7 +19,9 @@ namespace Wk4Ex2_WeightedGradeCalculator
             // initialize return value
             double returnValue = Double.MaxValue;
 
+
             // processing
+
 
             // start of a do while loop
             do
@@ -41,9 +43,13 @@ namespace Wk4Ex2_WeightedGradeCalculator
             }
             // loop until returnValue has a different value
             while (returnValue == Double.MaxValue);
+
+
             // return returnValue
             return returnValue;
         }
+
+
 
         // a method to average grades inputted by a user
         static double AverageGrades(string aPrompt = "Please enter a new grade: ", string gradeType = "assignment")
@@ -79,23 +85,19 @@ namespace Wk4Ex2_WeightedGradeCalculator
             while (grade != -1);
 
 
-            /*
-            // use a for loop to go through all grades and add them together until all grades have been added
-            for (int i = 0; i < (assignmentGrades.Length - 1); i++)
-            {
-                // Add the grade to the sum of all grades
-                sum += i;
-            } */
-
             // calculate the average by dividing the sum by the number of parts
             average = sum / counter;
+
 
             // asign the average to the return value
             returnValue = average;
 
+
             // return returnValue
             return returnValue;
         }
+
+
 
         // a method to calculate final grade based on weight of assignments, midterms, and finals
         static double CalculateFinalGrade(double assignments, double midterms, double finals)
